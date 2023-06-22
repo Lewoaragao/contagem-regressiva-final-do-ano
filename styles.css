@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #444444;
+    margin-bottom: 30px;
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #countdown div {
+    margin: 0 10px;
+  }
+  
+  #countdown span {
+    display: block;
+    font-size: 48px;
+    color: #777777;
+  }
+  
+  #months {
+    color: #FFB6C1;
+  }
+  
+  #days {
+    color: #ADD8E6;
+  }
+  
+  #hours {
+    color: #90EE90;
+  }
+  
+  #minutes {
+    color: #FFA07A;
+  }
+  
+  #seconds {
+    color: #DA70D6;
+  }
+  
