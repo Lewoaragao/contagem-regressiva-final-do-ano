@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <title>Contador para Meia-Noite</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <div id="loading">
-    <div class="loading-container">
+  <head>
+    <title>Contador para Meia-Noite</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="loading">
+      <div class="loading-container">
         <div class="loading-circle"></div>
         <div class="loading-text">Carregando...</div>
       </div>
-  </div>
-
-  <div class="container">
-    <h1>Contador para Meia-Noite - Último Dia do Ano <span id="lastDayYear"></span></h1>
-    <div id="countdown">
-      <div>
-        <span id="months">00</span>
-        <span>Meses</span>
-      </div>
-      <div>
-        <span id="days">00</span>
-        <span>Dias</span>
-      </div>
-      <div>
-        <span id="hours">00</span>
-        <span>Horas</span>
-      </div>
-      <div>
-        <span id="minutes">00</span>
-        <span>Minutos</span>
-      </div>
-      <div>
-        <span id="seconds">00</span>
-        <span>Segundos</span>
-      </div>
     </div>
-    <div id="newYearMessage"></div>
-  </div>
 
-  <script src="script.js"></script>
-  <script>
-    // Esconder o elemento de carregamento após 3 segundos
-    setTimeout(function() {
-      document.getElementById('loading').style.display = 'none';
-    }, 3000);
-  </script>
-</body>
+    <div class="container">
+      <h1>Contador para meia noite do dia <span id="lastDayYear"></span></h1>
+      <div id="countdown">
+        <div>
+          <span id="months">00</span>
+          <span>Meses</span>
+        </div>
+        <div>
+          <span id="days">00</span>
+          <span>Dias</span>
+        </div>
+        <div>
+          <span id="hours">00</span>
+          <span>Horas</span>
+        </div>
+        <div>
+          <span id="minutes">00</span>
+          <span>Minutos</span>
+        </div>
+        <div>
+          <span id="seconds">00</span>
+          <span>Segundos</span>
+        </div>
+      </div>
+      <div id="newYearMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Esconder o elemento de carregamento após 3 segundos
+      document.querySelector(".container").style.display = "none";
+      setTimeout(function () {
+        document.getElementById("loading").style.display = "none";
+        document.querySelector(".container").style.display = "block";
+      }, 3000);
+    </script>
+  </body>
 </html>
